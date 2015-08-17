@@ -17,7 +17,7 @@ $ONLY_PROJECT = " AND (	project_id = '201703' OR
 $ONLY_PROJECT = " AND (	project_id = '176571' OR 
 						project_id = '187982' OR 
 						project_id = '201498' OR 
-						project_id = '181005' OR 
+						project_id = '12345' OR 
 						project_id = '191859' OR 
 						project_id = '195502' OR 
 						project_id = '179250'
@@ -25,6 +25,8 @@ $ONLY_PROJECT = " AND (	project_id = '176571' OR
 
 	
 } else if($_GET['adp'] == "asien"){
+
+
 	
 $ONLY_PROJECT = " AND (	project_id = '179134' OR 
 						project_id = '179472' OR 
