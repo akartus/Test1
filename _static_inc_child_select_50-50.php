@@ -116,8 +116,8 @@ $the_id = $child_cur['id'];
 
 if (mysql_num_rows($child_res) == 0){
 	### Nächste ID auswählen ###
-	$child_res = mysql_query("SELECT * FROM $child_db WHERE status = 0 gender = '$next_gender' AND $CHILD_BLOCK $SQL_PROJECT $ONLY_PROJECT ORDER BY RAND() LIMIT 1");
-	#$child_res = mysql_query("SELECT * FROM $child_db WHERE status = 0 $CHILD_BLOCK $SQL_PROJECT $ONLY_PROJECT ORDER BY RAND() LIMIT 1");
+	#$child_res = mysql_query("SELECT * FROM $child_db WHERE status = 0 gender = '$next_gender' AND $CHILD_BLOCK $SQL_PROJECT $ONLY_PROJECT ORDER BY RAND() LIMIT 1");
+	$child_res = mysql_query("SELECT * FROM $child_db WHERE status = 0 $CHILD_BLOCK $SQL_PROJECT $ONLY_PROJECT ORDER BY RAND() LIMIT 1");
 	$child_cur = mysql_fetch_array($child_res);
 	$the_id = $child_cur['id'];
 	
